@@ -1,0 +1,22 @@
+.text-default {
+  .text-color;
+  @apply cursor-pointer text-sm transition-all;
+  &:hover {
+    .text-primary-color;
+  }
+  &.text-active {
+    .text-primary-color;
+  }
+}
+
+.text-primary-color {
+  color: @primary-color!important;
+}
+
+.text-color {
+  color: @text-color!important;
+}
+
+.text-color-secondary {
+  color: @text-color-secondary!important;
+}

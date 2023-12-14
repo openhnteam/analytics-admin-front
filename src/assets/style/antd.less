@@ -1,0 +1,99 @@
+@bg: rgb(237, 239, 244);
+
+/* pro-layout ant-design-vue */
+.ant-pro-basicLayout {
+  background: @bg;
+  > .ant-layout {
+    background: @bg;
+  }
+}
+
+.ant-pro-basicLayout-content {
+  margin: 0;
+}
+
+.ant-pro-sider {
+  background: @bg;
+  .ant-menu {
+    background: @bg;
+  }
+}
+
+.ant-pro-top-menu {
+  .ant-pro-top-nav-header-menu {
+    .anticon {
+      vertical-align: middle;
+    }
+  }
+}
+
+.ant-pro-top-nav-header-main {
+  @apply container mx-auto pl-0;
+}
+
+.ant-select,
+.ant-input {
+  color: @text-color-secondary!important;
+}
+
+/* end pro-layout ant-design-vue */
+
+/* ant-design-vue */
+.ant-message .anticon {
+  vertical-align: middle;
+  top: -1px;
+}
+.ant-calendar-footer-extra .ant-tag {
+  color: @primary-color;
+  border-color: @primary-border-color;
+  background-color: @primary-background-color;
+  cursor: pointer;
+}
+#app {
+  .ant-card-head {
+    @apply !px-4;
+    .ant-card-head-title {
+      color: @text-color;
+      @apply !py-3 font-normal;
+    }
+    .ant-card-extra {
+      @apply !py-3;
+      & > .anticon {
+        @apply !text-xl leading-none;
+        svg {
+          @apply align-text-bottom;
+        }
+      }
+    }
+  }
+  .ant-card-body {
+    @apply !px-6 !py-4;
+  }
+  .ant-form-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .ant-menu-sub.ant-menu-inline {
+    background: transparent;
+  }
+  .ant-menu-inline .ant-menu-selected,
+  .ant-menu-inline .ant-menu-item-selected {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    .anticon.ant-menu-item-icon {
+      @apply animate-spin;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .ant-menu-item:active,
+  .ant-menu-submenu-title:active {
+    background: rgb(255, 255, 255);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+/* end ant-design-vue */
